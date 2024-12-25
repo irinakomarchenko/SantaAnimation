@@ -3,7 +3,13 @@ plugins {
 }
 
 group = "hexlet.code"
-version = "1.0-SNAPSHOT"
+version = "1.0"
+
+tasks.jar {
+    manifest {
+        attributes["Main-Class"] = "hexlet.code.SantaAnimation"
+    }
+}
 
 repositories {
     mavenCentral()
